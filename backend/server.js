@@ -4,12 +4,14 @@ const cors = require('cors');
 require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
+const interviewRoutes = require('./routes/interview');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
+app.use('/api/interview', interviewRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
