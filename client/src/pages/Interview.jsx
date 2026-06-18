@@ -112,7 +112,7 @@ export default function Interview() {
     return (
       <div style={s.page}>
         <nav style={s.nav}>
-          <span style={s.logo}>InterviewIQ</span>
+          <span style={s.logo}>PrepAI</span>
           <button style={s.logoutBtn} onClick={handleLogout}>Log Out</button>
         </nav>
         <div style={s.doneWrap}>
@@ -144,7 +144,7 @@ export default function Interview() {
   return (
     <div style={s.page}>
       <nav style={s.nav}>
-        <span style={s.logo}>InterviewIQ</span>
+        <span style={s.logo}>PrepAI</span>
         <div style={s.navMeta}>
           <span style={s.navBadge}>{role}</span>
           <span style={s.navBadge}>{type}</span>

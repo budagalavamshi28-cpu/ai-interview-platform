@@ -45,7 +45,7 @@ export default function Dashboard() {
   return (
     <div style={s.page}>
       <nav style={s.nav}>
-        <span style={s.logo}>InterviewIQ</span>
+        <span style={s.logo}>PrepAI</span>
         <div style={s.navRight}>
           <span style={s.navTag}>AI-Powered Practice</span>
           <button style={s.logoutBtn} onClick={handleLogout}>Log Out</button>

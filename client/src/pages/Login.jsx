@@ -33,7 +33,7 @@ export default function Login() {
   return (
     <div style={s.page}>
       <nav style={s.nav}>
-        <span style={s.logo}>InterviewIQ</span>
+        <span style={s.logo}>PrepAI</span>
       </nav>
 
       <div style={s.main}>

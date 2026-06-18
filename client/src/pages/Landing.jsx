@@ -39,7 +39,7 @@ export default function Landing() {
     <div style={s.page}>
       {/* NAV */}
       <nav style={s.nav}>
-        <span style={s.logo}>InterviewIQ</span>
+        <span style={s.logo}>PrepAI</span>
         <div style={s.navLinks}>
           <button style={s.navGhost} onClick={() => navigate('/login')}>Sign In</button>
           <button style={s.navBtn} onClick={() => navigate('/register')}>Get Started Free →</button>
@@ -54,7 +54,7 @@ export default function Landing() {
           <span style={{color: C.purpleMid}}>Real AI Feedback</span>
         </h1>
         <p style={s.heroSub}>
-          InterviewIQ gives you a real interview experience — AI-generated questions,
+          PrepAI gives you a real interview experience — AI-generated questions,
           voice mode, instant scoring, and conversational feedback. Built for freshers
           and experienced devs who want to actually get hired.
         </p>
@@ -131,7 +131,7 @@ export default function Landing() {
         <div style={s.ctaBox}>
           <p style={s.ctaEyebrow}>Free Forever</p>
           <h2 style={s.ctaHeading}>Stop cramming. Start practicing.</h2>
-          <p style={s.ctaSub}>Join InterviewIQ and walk into your next interview with real confidence.</p>
+          <p style={s.ctaSub}>Join PrepAI and walk into your next interview with real confidence.</p>
           <button style={s.ctaBtn} onClick={() => navigate('/register')}>
             Create Free Account →
           </button>
@@ -140,7 +140,7 @@ export default function Landing() {
 
       {/* FOOTER */}
       <footer style={s.footer}>
-        <span style={s.footerLogo}>InterviewIQ</span>
+        <span style={s.footerLogo}>PrepAI</span>
         <p style={s.footerText}>Built with React, Node.js, Groq AI · © 2025</p>
         <div style={s.footerLinks}>
           <button style={s.footerLink} onClick={() => navigate('/login')}>Sign In</button>
