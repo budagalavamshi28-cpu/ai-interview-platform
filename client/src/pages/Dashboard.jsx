@@ -98,7 +98,7 @@ export default function Dashboard() {
         </div>
 
         <button style={s.primaryBtn} onClick={() => navigate('/interview', { state: { role, type } })}>
-          Start Interview →
+          Start Interview 
         </button>
       </div>
     </div>
