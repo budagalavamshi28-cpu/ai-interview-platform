@@ -18,6 +18,7 @@ router.post('/register', async (req, res) => {
 
     res.status(201).json({ token, user: { id: user._id, name: user.name, email: user.email } });
   } catch (err) {
+    console.log('REGISTER ERROR:', err.message);
     res.status(500).json({ message: 'Server error' });
   }
 });
@@ -26,7 +27,7 @@ router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    const user = await user.findOne({ email });
+    const user = await User.findOne({ email });
     if (!user) return res.status(400).json({ message: 'Invalid credentials' });
 
     const isMatch = await bcrypt.compare(password, user.password);
@@ -36,6 +37,7 @@ router.post('/login', async (req, res) => {
 
     res.json({ token, user: { id: user._id, name: user.name, email: user.email } });
   } catch (err) {
+    console.log('LOGIN ERROR:', err.message);
     res.status(500).json({ message: 'Server error' });
   }
 });
