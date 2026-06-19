@@ -48,27 +48,27 @@ export default function Register() {
 
           <label style={s.label}>Full name</label>
           <input
-            style={s.input} type="text" placeholder="Jane Smith"
+            style={s.input} type="text" placeholder=""
             value={name} onChange={e => setName(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleRegister()}
           />
 
           <label style={{...s.label, marginTop: '16px'}}>Email address</label>
           <input
-            style={s.input} type="email" placeholder="you@example.com"
+            style={s.input} type="email" placeholder=""
             value={email} onChange={e => setEmail(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleRegister()}
           />
 
           <label style={{...s.label, marginTop: '16px'}}>Password</label>
           <input
-            style={s.input} type="password" placeholder="Min. 6 characters"
+            style={s.input} type="password" placeholder=""
             value={password} onChange={e => setPassword(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleRegister()}
           />
 
           <button style={{...s.primaryBtn, opacity: loading ? 0.55 : 1}} onClick={handleRegister} disabled={loading}>
-            {loading ? 'Creating account...' : 'Create Account →'}
+            {loading ? 'Creating account...' : 'Create Account'}
           </button>
 
           <p style={s.footerText}>

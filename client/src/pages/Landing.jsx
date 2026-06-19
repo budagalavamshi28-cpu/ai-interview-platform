@@ -42,7 +42,7 @@ export default function Landing() {
         <span style={s.logo}>PrepAI</span>
         <div style={s.navLinks}>
           <button style={s.navGhost} onClick={() => navigate('/login')}>Sign In</button>
-          <button style={s.navBtn} onClick={() => navigate('/register')}>Get Started Free →</button>
+          <button style={s.navBtn} onClick={() => navigate('/register')}>Get Started Free </button>
         </div>
       </nav>
 
@@ -60,7 +60,7 @@ export default function Landing() {
         </p>
         <div style={s.heroBtns}>
           <button style={s.primaryBtn} onClick={() => navigate('/register')}>
-            Start Practicing Free →
+            Start Practicing Free 
           </button>
           <button style={s.outlineBtn} onClick={() => navigate('/login')}>
             Sign In
@@ -133,7 +133,7 @@ export default function Landing() {
           <h2 style={s.ctaHeading}>Stop cramming. Start practicing.</h2>
           <p style={s.ctaSub}>Join PrepAI and walk into your next interview with real confidence.</p>
           <button style={s.ctaBtn} onClick={() => navigate('/register')}>
-            Create Free Account →
+            Create Free Account 
           </button>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function Landing() {
       {/* FOOTER */}
       <footer style={s.footer}>
         <span style={s.footerLogo}>PrepAI</span>
-        <p style={s.footerText}>Built with React, Node.js, Groq AI · © 2025</p>
+        <p style={s.footerText}>Built with React, Node.js, Groq AI · © 2026</p>
         <div style={s.footerLinks}>
           <button style={s.footerLink} onClick={() => navigate('/login')}>Sign In</button>
           <button style={s.footerLink} onClick={() => navigate('/register')}>Register</button>

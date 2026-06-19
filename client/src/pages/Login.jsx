@@ -59,7 +59,7 @@ export default function Login() {
           />
 
           <button style={{...s.primaryBtn, opacity: loading ? 0.55 : 1}} onClick={handleLogin} disabled={loading}>
-            {loading ? 'Signing in...' : 'Sign In →'}
+            {loading ? 'Signing in...' : 'Sign In'}
           </button>
 
           <p style={s.footerText}>
