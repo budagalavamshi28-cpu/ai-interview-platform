@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import axios from 'axios'
+import api from '../api'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 export default function Interview() {
@@ -78,7 +78,7 @@ export default function Interview() {
   const generateQuestion = async () => {
     setLoading(true); setAnswer(''); setFeedback(null); setPhase('question'); setShowScoreDetail(false); stopSpeaking()
     try {
-      const res = await axios.post('http://localhost:5000/api/interview/question', { role, type, previousQuestions })
+      const res = await api.post('/api/interview/question', { role, type, previousQuestions })
       setQuestion(res.data.question)
       setPreviousQuestions(prev => [...prev, res.data.question])
       setTimeout(() => speakText(res.data.question), 400)
@@ -90,7 +90,7 @@ export default function Interview() {
     if (!answer.trim()) return
     stopListening(); stopSpeaking(); setLoading(true)
     try {
-      const res = await axios.post('http://localhost:5000/api/interview/evaluate', { question, answer, role, type })
+      const res = await api.post('/api/interview/evaluate', { question, answer, role, type })
       setFeedback(res.data)
       setScores(prev => [...prev, res.data.score])
       setPhase('feedback')

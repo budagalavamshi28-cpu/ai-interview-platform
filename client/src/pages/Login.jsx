@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import axios from 'axios'
+import api from '../api'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -21,7 +21,7 @@ export default function Login() {
     if (!email || !password) return setError('Please fill in all fields.')
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', { email, password })
+      const res = await api.post('/api/auth/login', { email, password })
       localStorage.setItem('token', res.data.token)
       navigate('/dashboard')
     } catch (err) {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import axios from 'axios'
+import api from '../api'
 
 export default function Register() {
   const [name, setName] = useState('')
@@ -23,7 +23,7 @@ export default function Register() {
     if (password.length < 6) return setError('Password must be at least 6 characters.')
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', { name, email, password })
+      const res = await api.post('/api/auth/register', { name, email, password })
       localStorage.setItem('token', res.data.token)
       navigate('/dashboard')
     } catch (err) {
