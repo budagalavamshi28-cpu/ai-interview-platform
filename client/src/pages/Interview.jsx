@@ -243,7 +243,7 @@ export default function Interview() {
             )}
 
             <button style={s.primaryBtn} onClick={nextQuestion}>
-              {questionNum >= totalQuestions ? 'See Final Results →' : 'Next Question →'}
+              {questionNum >= totalQuestions ? 'See Final Results' : 'Next Question'}
             </button>
           </div>
         )}
