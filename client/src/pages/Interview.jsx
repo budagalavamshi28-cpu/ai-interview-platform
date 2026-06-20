@@ -148,7 +148,7 @@ export default function Interview() {
         <div style={s.navMeta}>
           <span style={s.navBadge}>{role}</span>
           <span style={s.navBadge}>{type}</span>
-          <button style={s.exitBtn} onClick={() => { stopSpeaking(); stopListening(); navigate('/dashboard') }}>← Dashboard</button>
+          <button style={s.exitBtn} onClick={() => { stopSpeaking(); stopListening(); navigate('/dashboard') }}>Dashboard</button>
           <button style={s.logoutBtn} onClick={handleLogout}>Log Out</button>
         </div>
       </nav>

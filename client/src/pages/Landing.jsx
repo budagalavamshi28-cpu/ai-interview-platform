@@ -12,11 +12,11 @@ export default function Landing() {
   }, [])
 
   const features = [
-    { icon: '🤖', title: 'AI-Generated Questions', desc: 'Powered by Groq LLaMA 3 — questions tailored to your role and interview type in real time.' },
-    { icon: '🎤', title: 'Voice Mode', desc: 'AI speaks every question aloud. Answer using your mic or type — just like a real interview.' },
+    { icon: '🤖', title: 'AI-Generated Questions', desc: 'Powered by Groq LLaMA 3 , questions tailored to your role and interview type in real time.' },
+    { icon: '🎤', title: 'Voice Mode', desc: 'AI speaks every question aloud. Answer using your mic or type , just like a real interview.' },
     { icon: '📊', title: 'Instant Scoring', desc: 'Get scored 1–10 after every answer with detailed feedback on what you did well and what to improve.' },
     { icon: '🤝', title: 'HR Round Included', desc: 'Practice "Tell me about yourself" and other HR classics with a friendly AI HR manager.' },
-    { icon: '🧠', title: '5 Interview Types', desc: 'Technical, Behavioral, HR, Domain, and Mixed — all in one platform.' },
+    { icon: '🧠', title: '5 Interview Types', desc: 'Technical, Behavioral, HR, Domain, and Mixed , all in one platform.' },
     { icon: '💬', title: 'Real Interviewer Feel', desc: 'The AI responds conversationally after every answer, not just with robotic scores.' },
   ]
 
@@ -54,7 +54,7 @@ export default function Landing() {
           <span style={{color: C.purpleMid}}>Real AI Feedback</span>
         </h1>
         <p style={s.heroSub}>
-          PrepAI gives you a real interview experience — AI-generated questions,
+          PrepAI gives you a real interview experience and AI-generated questions,
           voice mode, instant scoring, and conversational feedback. Built for freshers
           and experienced devs who want to actually get hired.
         </p>
